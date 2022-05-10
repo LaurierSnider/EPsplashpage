@@ -89,7 +89,7 @@
 @media only screen and (max-width: 930px) {
   .card {
     flex-direction: column-reverse;
-    min-height: 600px;
+    min-height: 690px;
   }
 
   .logo {
