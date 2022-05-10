@@ -119,4 +119,31 @@ body, html {
     font-size: 2em;
     margin-top: 40px;
   }
+ 
+  .Blob-two {
+    right: 0em;
+    width: 350px;
+  }
+
+  .Blob {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .card {
+    min-width: 330px;
+  }
+
+  .logo {
+    font-size: 3em;
+  }
+
+  .content-wrapper h3 {
+    font-size: 2em;
+  }
+
+  .content-wrapper span {
+    font-size: 1.5em;
+  }
 }
