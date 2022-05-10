@@ -27,27 +27,31 @@ body, html {
 
 .card {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 20px 40px grey;
   background-color: white;
   border-radius: 25px;
-  width: 70vw;
+  width: 90vw;
   max-width: 1000px;
-  min-width: 379px;
+  min-width: 10em;
   height: 60vh;
-  min-height: 300px;
+  min-height: 20em;
   margin: auto;
+  margin-top: 15vh;
   z-index: 2;
 }
 
 .logo {
-  width: 40%;
+  width: 100%;
+  height: 40%;
   color: #00C564;
   font-weight: 600;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
   margin: auto;
+  margin-top: 10%;
 }
 
 .content-wrapper {
@@ -55,96 +59,76 @@ body, html {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   height: 100%;
-  width: 60%;
+  width: 100%;
 }
 
 .content-wrapper h3 {
   font-weight: 400;
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 .content-wrapper span {
   color: #00C564;
-  font-size: 2em;
+  font-size: 7vw;
+  margin-top: 0.5em;
 }
 
 .Blob {
   position: absolute;
-  bottom: -9em;
-  left: -10em;
-  width: 600px;
-  height: 800px;
-  transform: rotate(160deg);
+  bottom: 0;
+  left: 0;
+  width: 80vw;
+  height: 40vh;
+  transform: rotate(180deg);
   z-index: -1;
 }
 
 
 .Blob-two {
-  right: -5em;
-  top: -15em;
+  right: 0;
+  top: 0;
   position: absolute;
-  width: 600px;
-  height: 800px;
+  width: 80vw;
+  height: 60vh;
   z-index: -1;
 }
 
-@media only screen and (max-width: 1150px) {
-  .logo {
-    font-size: 3em;
-  }
-}
-
-@media only screen and (max-width: 930px) {
-  .card {
-    flex-direction: column-reverse;
-    min-height: 600px;
-    margin-top: 90px;
-  }
-
-  .logo {
-    font-size: 4em;
-    width: 100%;
-    height: 30%;
-    margin-top: 40px;
-  }
-  
-  .content-wrapper {
-    width: 100%;
-    margin-bottom: 100px;
-  }
-
-  .content-wrapper span {
-    font-size: 2em;
-    margin-top: 40px;
-  }
- 
-  .Blob-two {
-    right: 0em;
-    width: 350px;
-  }
-
+@media screen and (min-width: 880px) {
   .Blob {
-    width: 400px;
+    left: -25vw;
   }
+
+  .Blob-two {
+    right: -25vw;
+  }
+
 }
 
-@media only screen and (max-width: 390px) {
+@media screen and (min-width: 540px) {
+
   .card {
-    min-width: 330px;
+    min-height: 30em;
   }
 
-  .logo {
-    font-size: 3em;
+  .content-wrapper {
+    justify-content: space-evenly;
   }
 
   .content-wrapper h3 {
-    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3em;
+  }
+  
+  .logo {
+    margin-top: 5%;
+    font-size: 4em;
   }
 
   .content-wrapper span {
-    font-size: 1.5em;
+    font-size: 4vw;
   }
 }
